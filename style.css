@@ -1,0 +1,17 @@
+/*
+.color1 {background-color: #501360 }
+.color2 {background-color: #682a78 }
+.color3 {background-color: #80418f }
+.color4 {background-color: #9857a7 }
+.color5 {background-color: #b06ebe }
+*/
+
+header {
+    background-color: #682a78;
+    color: white;
+}   
+
+body {
+    background-color: #b06ebe;
+    font-family: 'Courier New', Courier, monospace;
+}
