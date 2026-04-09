@@ -86,6 +86,24 @@ img{
     font-family: 'Courier New', Courier, monospace;
 }
 
+img#carrinho {
+    width: 4vw;
+    transition: all 0.3s ease;
+    margin-left: 32vw;
+    margin-top: 3vh;
+}
+
+#carrinho:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+#carrinho:active {
+    opacity: 0.6;
+    transform: translateY(1px);
+}
+
 img#logo {
     width: 5vw;
 }
@@ -177,9 +195,11 @@ input {
     background-color: #501360;
     border-bottom: 1px solid #b06ebe;
     padding: 0.2vw;
-    padding-left: 0.5vw;
+    padding-left: 1vw;
     border-radius: 20px;
     width: 25vw;
+    height: 3vh;
+    font-size: 1vw;
     color: white;
     transition: all 0.3s ease;
 }
