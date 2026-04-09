@@ -85,6 +85,10 @@ img{
     font-family: 'Courier New', Courier, monospace;
 }
 
+img#logo {
+    width: 5vw;
+}
+
 header {
     background-color: #682a78;
     color: white;
@@ -140,6 +144,7 @@ ul.nav-links2 li:active {
     padding-bottom: 1.5vh;
     background-color: rgb(95, 26, 112);
     box-shadow: 0 0 10px 1px #501360;
+    margin-bottom: 4vh;
 }
 
 .nav-links2 {
