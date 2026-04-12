@@ -164,6 +164,7 @@ ul.nav-links2 li:active {
     padding-bottom: 1.5vh;
     background-color: rgb(95, 26, 112);
     box-shadow: 0 0 10px 1px #501360;
+    box-shadow: 0 0 10px 4px #501360;
     margin-bottom: 4vh;
 }
 
@@ -252,6 +253,17 @@ a:hover {
     margin-left: 0.5vw;
 }
 
+footer {
+    color: white;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    background-color: rgb(95, 26, 112);
+    box-shadow: 0 0 10px 5px #501360;
+    margin-top: 4vh;
+}
+
+footer .copy {
+    margin-left: 2vw;
 .preco{
     background-color:#501360;
     width: 40%;
