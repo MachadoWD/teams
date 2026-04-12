@@ -282,3 +282,35 @@ footer .copy {
     display: flex;
     margin-top: 10%;
 }
+
+
+/* item categorias */
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -1vw;
+    background-color: #80418f;
+    padding: 10px;
+    border-radius: 8px;
+    list-style: none;
+    min-width: 150px;
+}
+
+.submenu li {
+    font-size: 0.8vw;
+    padding: 5px;
+}
+
+.submenu li:hover {
+    background-color: #9857a7;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
