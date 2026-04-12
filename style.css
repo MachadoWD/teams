@@ -254,30 +254,3 @@ a:hover {
     margin-top: 1vh;
     margin-left: 0.5vw;
 }
-
-footer {
-    color: white;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
-    background-color: rgb(95, 26, 112);
-    box-shadow: 0 0 10px 5px #501360;
-    margin-top: 4vh;
-}
-
-footer .copy {
-    margin-left: 2vw;
-}
-.preco{
-    background-color:#501360;
-    width: 40%;
-    height: 4em;
-    font-size: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.legenda{
-    display: flex;
-    margin-top: 10%;
-}
