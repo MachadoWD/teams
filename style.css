@@ -267,3 +267,17 @@ footer {
 footer .copy {
     margin-left: 2vw;
 }
+.preco{
+    background-color:#501360;
+    width: 40%;
+    height: 4em;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.legenda{
+    display: flex;
+    margin-top: 10%;
+}
