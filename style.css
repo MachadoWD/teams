@@ -23,12 +23,12 @@ body{
 }
 
 main{
+    flex: 1;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100%;
 }
 
@@ -58,7 +58,6 @@ main{
     border-style:ridge;
     width: 90%;
     height: 2em;
-    cursor: pointer;
     transition: 0.3s;
     border-radius: 5px;
     border-color: #27002b;
@@ -132,21 +131,22 @@ ul.nav-links a {
 }
 
 ul.nav-links li:hover {
-    text-shadow: 0 0 3px #b06ebe;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px #b06ebe;
     cursor: pointer;
-    box-shadow: 0px 10px 10px -8px rgba(0,0,0,0.3); 
 }
 
 ul.nav-links li:active {
     opacity: 0.7;
 }
 
-ul.nav-links li {
+ul.nav-links li, ul.nav-links2 li {
     transition: all 0.3s ease;  
 }
 
 ul.nav-links2 li:hover {
     text-shadow: 0 0 5px #b06ebe;
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -163,7 +163,7 @@ ul.nav-links2 li:active {
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
     background-color: rgb(95, 26, 112);
-    box-shadow: 0 0 10px 1px #501360;
+    box-shadow: 0 0 10px 4px #501360;
     margin-bottom: 4vh;
 }
 
@@ -186,8 +186,12 @@ form {
     transition: all 0.3s ease;
 }
 
+input:focus, input:hover {
+    box-shadow: 0 0 5px 5px #8920a3;
+}
+
 form:hover {
-    box-shadow: 0 0 5px 3px #8920a3;
+    background-color: rgb(145, 33, 173);
 }
 
 input {
@@ -252,6 +256,18 @@ a:hover {
     margin-left: 0.5vw;
 }
 
+footer {
+    color: white;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    background-color: rgb(95, 26, 112);
+    box-shadow: 0 0 10px 5px #501360;
+    margin-top: 4vh;
+}
+
+footer .copy {
+    margin-left: 2vw;
+}
 .preco{
     background-color:#501360;
     width: 40%;
