@@ -43,7 +43,7 @@ main{
 }
 
 .jogo:hover{
-    transform: translatey(-0.5vw);
+    transform: scale(1.05);
     opacity: 0.9;
 }
 .jogo h2{
