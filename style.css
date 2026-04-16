@@ -24,7 +24,6 @@ body{
 }
 
 main{
-    flex: 1;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-wrap: wrap;
@@ -338,6 +337,8 @@ c.jogos {
 
 .c-img-jogo {
     width: 15vw;
+}
+
 .cadastro{
     color: white;
     background-color: #b06ebe;
@@ -394,4 +395,96 @@ c.jogos {
     cursor: pointer;
     color: white;
     font-size: 0.75em;
+}
+
+.container {
+    width: 50vw ;
+}
+
+.imagens {
+    width: 30vw;
+}
+
+.imagens img {
+    width: 7vw;
+    height: 4vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px 1px black;
+}
+
+.imagens img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+video {
+    width: 30vw;
+    box-shadow: 0 0 3px 1px black;
+    transition: all 0.3s ease;
+}
+
+video:hover {
+    box-shadow: 0 0 3px 2px black;
+}
+
+.grande {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding-top: 50px;
+    z-index: 999;
+}
+
+.grande:target {
+    display: block;
+}
+
+.grande img {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.grande a {
+    text-decoration: none;
+}
+
+.estrelas img {
+    width: 8vw;
+}
+
+.estrelas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.8vw;
+}
+
+.estrelas p {
+    margin-top: 0.3vh;
+}
+
+#seisete {
+    margin-left: 2vw;
+}
+
+.container {
+    background-color:#27002b;
+    width: 30vw;
+    padding: 1vw;
+    border-radius: 20px;
 }
