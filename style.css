@@ -15,6 +15,7 @@ parte 2:
 *{
     margin: 0;
     padding: 0;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -23,6 +24,7 @@ body{
 }
 
 main{
+    flex: 1;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-wrap: wrap;
@@ -39,16 +41,18 @@ main{
     margin: 1em;
     border-radius: 20px 20px 0px 0px;
     box-shadow: 0px 0px 10px #27002b;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .jogo:hover{
-    transform: translatey(-0.5vw);
+    transform: scale(1.05);
     opacity: 0.9;
+    box-shadow: 0px 5px 25px #27002b;
 }
 .jogo h2{
     margin: 0.25em 0.75em;
     color: #fff;
+    font-size: 1.15vw;
 }
 
 .jogo button{
@@ -276,6 +280,8 @@ footer .copy {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bolder;
+    box-shadow: 0 0 5px 1px #501360;
 }
 
 .legenda{
@@ -284,6 +290,54 @@ footer .copy {
 }
 
 
+/* item categorias */
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -1vw;
+    background-color: #80418f;
+    padding: 10px;
+    border-radius: 8px;
+    list-style: none;
+    min-width: 150px;
+}
+
+.submenu li {
+    font-size: 0.8vw;
+    padding: 5px;
+}
+
+.submenu li:hover {
+    background-color: #9857a7;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.carrinho {
+    width: 60vw;
+}
+
+c.jogos {
+    padding: 1vw;
+    background-color: #27002b;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.c-jogo {
+    background-color:#9320ad;
+}
+
+.c-img-jogo {
+    width: 15vw;
 .cadastro{
     color: white;
     background-color: #b06ebe;
