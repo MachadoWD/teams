@@ -1,27 +1,27 @@
-/*
-.color1 {background-color: #501360 }
-.color2 {background-color: #682a78 }
-.color3 {background-color: #80418f }
-.color4 {background-color: #9857a7 }
-.color5 {background-color: #b06ebe }
 
-parte 2:
-.color6 { #9a339f };
-.color7 { #88268e };
-.color8 { #761a7c };
-.color9 { #630d6b };
-.color10 { #510059 };
-*/
+.color01 {background-color: #501360; }
+.color02 {background-color: #682a78; }
+.color03 {background-color: #80418f; }
+.color04 {background-color: #9857a7; }
+.color05 {background-color: #b06ebe;}
+
+.color06 { background-color: #9a339f; }
+.color07 { background-color: #88268e; }
+.color08 { background-color: #761a7c; }
+.color09 { background-color: #630d6b; }
+.color10 { background-color: #510059; }
+
+.color11 {background-color: #27002b;}
 *{
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
 }
-
+/*
 body{
     background-color: #510059;
 }
-
+*/
 main{
     font-family: 'Courier New', Courier, monospace;
     display: flex;
@@ -35,7 +35,7 @@ main{
 .jogo{
     width: 20em;
     height: 20em;
-    background-color: #88268e;
+/*  background-color: #88268e; */
     margin: 1em;
     border-radius: 20px 20px 0px 0px;
     box-shadow: 0px 0px 10px #27002b;
@@ -54,7 +54,7 @@ main{
 .jogo button{
     margin: 0.5em 1em;
     color: #fff;
-    background-color: #9857a7;
+/*  background-color: #9857a7; */
     border-style:ridge;
     width: 90%;
     height: 2em;
@@ -325,7 +325,7 @@ footer .copy {
     color: white;
     width: 50%;
     border-radius: 20px;
-    height: 2em;
+    height: 3em;
     border: none;
     cursor: pointer;
     transition: 0.3s;
@@ -340,4 +340,46 @@ footer .copy {
     cursor: pointer;
     color: white;
     font-size: 0.75em;
+}
+
+.info-jogo{
+    width: 18vw;
+    border-radius: 20px 20px 0px 0px ;
+}
+
+.desc-jogo{
+    height: 12vh;
+}
+p{
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+.space{
+    display: flex;
+    justify-content: space-between;
+}
+
+.classificacao{
+
+}
+
+.classificacao h2{
+    height: 4vh;
+    width: 2vw;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.classificacao p{
+    font-size: 1.25vh;
+}
+
+.center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
