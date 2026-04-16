@@ -23,13 +23,13 @@ body{
 }
 
 main{
-    flex: 1;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh;
 }
 
 .jogo{
@@ -289,8 +289,8 @@ footer .copy {
     background-color: #b06ebe;
     display: grid; 
     gap: 0.5em;
-    width: 22em;
-    height: 30em;
+    width: 26vw;
+    height: 60vh;
     padding: 2em;
 }
 
@@ -307,8 +307,8 @@ footer .copy {
     background-color: #b06ebe;
     display: grid; 
     gap: 0.5em;
-    width: 22em;
-    height: 20em;
+    width: 26vw;
+    height: 25em;
     padding: 2em;
 }
 
