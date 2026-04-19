@@ -14,13 +14,13 @@
             <img id="logo" src="img/logo.png" alt="Logo do Teams" width="100vw">
             <nav class="nav1">
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Comunidade</a></li>
                     <li><a href="#">Perfil</a></li>
                 </ul>   
             </nav>
-            <img src="img/carrinho.png" alt="Carrinho de Compras" id="carrinho" width="10vw">
+            <a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras" id="carrinho" width="10vw"></a>
         </div>
 
         <div class="search-bar">
@@ -38,7 +38,7 @@
                     </li>
                     <li>Explorar</li>
                     <li>Recomendações</li>
-                    <li>Seções Especiais</li>
+                    <li>Wishlist</li>
                 </ul>
             </nav>
 
@@ -49,13 +49,56 @@
         </div>
 
     </header>
-    <main>
+    <main class="main-carrinho">
         <div class="carrinho">
-            <h1>Carrinho</h1>
+            <h1> Seu Carrinho</h1>
+            <div class="conteudo">
             <div class="c-jogos">
                 <div class="c-jogo">
-                    <img class="c-img-jogo" src="img/needy.jpg" alt="Imagem de Needy Girl Overdose">
+                    <img class="c-img-jogo" src="img/inscryption.jpg" alt="Imagem de Inscryption">
+                    <div class="info">
+                        <h2>Inscryption</h2>
+                        <h3>R$49,99</h3>
+                        <p>Unidades: <span>1</span></p>
+                    </div>      
+                    <div class="escolhas">  
+                        <p><strong>Total: R$49,99</strong></p>
+                        <button>Remover</button>
+                    </div>
                 </div>
+                <div class="c-jogo">
+                    <img class="c-img-jogo" src="img/hotline.jpg" alt="Imagem de Hotline Miami">
+                    <div class="info">
+                        <h2>Hotline Miami</h2>
+                        <h3>R$32,99</h3>
+                        <p>Unidades: <span>2</span></p>
+                    </div>      
+                    <div class="escolhas">  
+                        <p><strong>Total: R$65,98</strong></p>
+                        <button>Remover</button>
+                    </div>
+                </div>
+                <div class="c-jogo">
+                    <img class="c-img-jogo" src="img/disco.jpg" alt="Imagem de Disco Elysium">
+                    <div class="info">
+                        <h2>Disco Elysium</h2>
+                        <h3>R$75,49</h3>
+                        <p>Unidades: <span>5</span></p>
+                    </div>      
+                    <div class="escolhas">  
+                        <p><strong>Total: R$377,45</strong></p>
+                        <button>Remover</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pagamento">
+                <div class="total">
+                    <h1>Total Estimado:</h1>
+                    <h1>R$493,42</h1>
+                </div>
+                <p>O imposto sobre vendas será calculado durante a finalização da compra, onde aplicável.</p>
+                <button class="pagar">Continuar para o pagamento</button>
+            </div>
             </div>
         </div>
     </main>

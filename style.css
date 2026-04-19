@@ -321,22 +321,148 @@ footer .copy {
 }
 
 .carrinho {
-    width: 60vw;
+    width: 70vw;
 }
 
-c.jogos {
-    padding: 1vw;
-    background-color: #27002b;
+.main-carrinho {
+    height: 90vh;
+    align-content: baseline !important;
+}
+
+.carrinho h1 {
+    margin-bottom: 3vh;
+}
+
+.c-jogos {
+    display: flex;
+    padding: 0.6vw;
+    box-shadow: 0 0 5px 2px #27002b;
     flex-direction: column;
-    gap: 1vh;
+    gap: 4vh;
+    width: 45vw;
+    transition: all 0.3s ease; 
+}
+
+.c-jogos:hover {
+    box-shadow: 0 0 5px 4px #27002b;
 }
 
 .c-jogo {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    border-radius: 0px 20px 0px 20px;
+    padding: 0.5vw;
+    width: 44vw;
     background-color:#9320ad;
+    transition: all 0.3s ease; 
+}
+
+.c-jogo:hover {
+    transform: scale(1.005);
+    box-shadow: 0 0 5px 2px #27002b;
+}
+
+
+.c-jogo .info {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 12vw;
+}
+
+.info h3 {
+    text-shadow: 0 0 20px #d22ff7;
+}
+
+.info span {
+    padding: 0.2vw;
+    box-shadow: 0 0 3px 0.5px #27002b;
+    border-radius: 20px;
+    background-color: #510059;
+}
+
+.info h2 {
+    font-size: 1.5vw;
+    margin-top: 0.5vh;
+    text-shadow: 0 0 20px #27002b;
+}
+
+.c-jogo .escolhas {
+    margin-left: 5vw;
+}
+
+.escolhas p {
+    text-shadow: 0 0 20px #27002b;
+    font-size: 1.2vw;
+    margin-top: 6vh;
+}
+
+.escolhas button, .pagar {
+    border: none;
+    padding: 0.3vw;
+    font-size: 0.7vw;
+    opacity: 0.8;
+    background-color: #27002b;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    transition: all 0.3s ease;
+}
+
+.escolhas button:hover, .pagar:hover {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 0 0 5px 0.5px #27002b;
+}
+
+.escolhas button:active, .pagar:active {
+    opacity: 0.5;
 }
 
 .c-img-jogo {
-    width: 15vw;
+    box-shadow: 0 0 5px 1px #77198f;
+    border-radius: 5px;
+    width: 14vw;
+}
+
+.pagamento {
+    box-shadow: 0 0 10px 1px #27002b;
+    border-top-right-radius: 1vw;
+    height: 15vh;
+    padding: 1vw;
+    background-color: #9320ad;
+    display: flex;
+    flex-direction: column;
+    width: 23vw;
+    transition: all 0.3s ease;
+}
+
+.pagamento:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 10px 4px #27002b;
+}
+
+.total {
+    font-size: 0.6vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2.4vw;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.pagamento p {
+    font-size: 0.7vw;
+}
+
+.pagar {
+    opacity: 1;
+    margin: 0;
+    margin-top: 2.5vh;
 }
 
 .cadastro{
