@@ -7,62 +7,261 @@
     <title>jogo</title>
 </head>
 <body class="color10">
-    <main>
-        <div class="container">
-                <div class="video-nota">
-                    <video width="320" controls autoplay>
-                    <source src="videos/Return of the Obra Dinn - Available Now - Lucas Pope (1080p, h264, youtube).mp4" type"video/mp4">
-                    </video>
-                    <div class="estrelas">
-                        <img src="img/estrelapng" alt="estrelas" width="100px">
-                        <p>Nota: 4.99</p>
-                        <p id="seisete">(67 avaliações)</p>
-                    </div>
-                </div>
-                <div class="imagens">
-                    <a href="#img-grande1"><img src="img/obra-dinn/img1.jpg" alt="Imagem 1"></a>
-                    <a href="#img-grande2"><img src="img/obra-dinn/img2.jpg" alt="Imagem 2"></a>
-                    <a href="#img-grande3"><img src="img/obra-dinn/img3.jpg" alt="Imagem 3"></a>
-                    <a href="#img-grande4"><img src="img/obra-dinn/img4.jpg" alt="Imagem 4"></a>
-                    <a href="#img-grande5"><img src="img/obra-dinn/img5.jpg" alt="Imagem 5"></a>
-                    <a href="#img-grande6"><img src="img/obra-dinn/img6.jpg" alt="Imagem 6"></a>
-                    <a href="#img-grande7"><img src="img/obra-dinn/img7.jpg" alt="Imagem 7"></a>
-                    <a href="#img-grande8"><img src="img/obra-dinn/img8.jpg" alt="Imagem 8"></a>
-                    <a href="#img-grande9"><img src="img/obra-dinn/img9.jpg" alt="Imagem 9"></a>
-                    <a href="#img-grande10"><img src="img/obra-dinn/img10.jpg" alt="Imagem 10"></a>
-                </div>
+    <header class="header">
+        <div class="logo">
+            <img id="logo" src="img/logo.png" alt="Logo do Teams" width="100vw">
+            <nav class="nav1">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Comunidade</a></li>
+                    <li><a href="#">Perfil</a></li>
+                </ul>   
+            </nav>
+            <a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras" id="carrinho" width="10vw"></a>
         </div>
-        <div class="info-jogo color02">
 
-            <img src="img/obra_dinn.jpg" class="img-jogo">
+        <div class="search-bar">
+            <nav class="cat">
+                <ul class="nav-links2">
+                    <li class="dropdown">
+                        Categorias
+                        <ul class="submenu">
+                            <li>Investigação</li>
+                            <li>Shooter</li>
+                            <li>RPG</li>
+                            <li>Indie</li>
+                            <li>Roguelike</li>
+                        </ul>
+                    </li>
+                    <li>Explorar</li>
+                    <li>Recomendações</li>
+                    <li>Wishlist</li>
+                </ul>
+            </nav>
 
-            <div style="padding: 2%;">
+            <form>
+                <input type="text" placeholder="Digite sua busca...">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
 
-                <div class="desc-jogo">
-                    <p>Desaparecido no Mar, 1803 O BOM NAVIO “OBRA DINN”</p>
-                </div>
-                <div class="flex center" style="margin-bottom: 2%;">
-                    <button class="botao_enviar">Comprar</button>
-                    <button class="botao_apagar">+ Carrinho</button>
-                </div>
-                <div class="flex space">
-                    <p class="preco">R$59,99</p>
+    </header>
+    <main class="main-jogo">
+        <div class="head-jogo">
+            <div class="container">
+                    <div class="video-nota">
+                        <video width="320" controls autoplay>
+                        <source src="videos/Return of the Obra Dinn - Available Now - Lucas Pope (1080p, h264, youtube).mp4" type"video/mp4">
+                        </video>
+                        <div class="estrelas">
+                            <img src="img/estrelapng" alt="estrelas" width="100px">
+                            <p>Nota: 4.99</p>
+                            <p id="seisete">(601 resenhas)</p>
+                        </div>
+                    </div>
+                    <div class="imagens">
+                        <a href="#img-grande1"><img src="img/obra-dinn/img1.jpg" alt="Imagem 1"></a>
+                        <a href="#img-grande2"><img src="img/obra-dinn/img2.jpg" alt="Imagem 2"></a>
+                        <a href="#img-grande3"><img src="img/obra-dinn/img3.jpg" alt="Imagem 3"></a>
+                        <a href="#img-grande4"><img src="img/obra-dinn/img4.jpg" alt="Imagem 4"></a>
+                        <a href="#img-grande5"><img src="img/obra-dinn/img5.jpg" alt="Imagem 5"></a>
+                        <a href="#img-grande6"><img src="img/obra-dinn/img6.jpg" alt="Imagem 6"></a>
+                        <a href="#img-grande7"><img src="img/obra-dinn/img7.jpg" alt="Imagem 7"></a>
+                        <a href="#img-grande8"><img src="img/obra-dinn/img8.jpg" alt="Imagem 8"></a>
+                        <a href="#img-grande9"><img src="img/obra-dinn/img9.jpg" alt="Imagem 9"></a>
+                        <a href="#img-grande10"><img src="img/obra-dinn/img10.jpg" alt="Imagem 10"></a>
+                    </div>
+            </div>
+            <div class="jogo-direita">
+                <div class="info-jogo color12">
+                    <img src="img/obra_dinn.jpg" class="img-jogo">
+                    <div style="padding: 2%;">
+                        <div class="desc-jogo">
+                            <p>Desaparecido no Mar, 1803 O BOM NAVIO "OBRA DINN".</p>
+                        </div>
+                        <div class="flex center botoes" style="margin-bottom: 2%;">
+                            <button class="botao_enviar">Comprar</button>
+                            <button class="botao_apagar">+ Carrinho</button>
+                        </div>
+                        <div class="comp">
+                            <div class="classificacao xyz color01">
+                                <p class="preco">R$59,99</p>
+                            </div>
+                            <div class="classificacao color01">
+                                <p class="ind">Classificação Indicativa:</p>
 
-                    <div class="classificacao color01">
-                        <p>Classificação Indicativa:</p>
-
-                        <div class="flex space" style="margin-top: 6%;">
-                            <h2 class="center-flex">16</h2>
-                            <div>
-                                <p>Violência</p>
-                                <p>Temas sensíveis</p>
-                                <p>Nudez</p>
+                                <div class="flex space" style="margin-top: 4%;">
+                                    <h2 class="center-flex">16</h2>
+                                    <div class="j-temas">
+                                        <p>Violência</p>
+                                        <p>Temas sensíveis</p>
+                                        <p>Nudez</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="tags">
+                    <ul class="color12">
+                        <li>Mistério</li>
+                        <li>Quebra-Cabeça</li>
+                        <li>Detetive</li>
+                        <li>Indie</li>
+                        <li>Um Jogador</li>
+                    </ul>
+                </div>
             </div>
+
+        </div>
+        <div class="resto">
+            <h1>Sobre Este Jogo</h1>
+            <div class="sobre">
+                <p>
+                    Desaparecido no Mar, 1803<br>
+                    O BOM NAVIO<br>
+                    “OBRA DINN”<br>
+                    ----------------<br>
+                    Construído em 1796, em Londres ~ 800 t, calado de 5,5m<br>
+                    Capitão R. WITTEREL ~ Tripulação de 51 homens<br>
+                    Última viagem ao Oriente ~ Nunca chegou ao Cabo<br>
+                    ----------------<br>
+                    Contatar escritório londrino da Cia. das Índias Orientais<br>
+                    para questões ou depoimentos.<br>
+                </p>
+                <h2>Uma Aventura de Indenização em Cores Mínimas</h2>
+                <p class="desc">
+                    Em 1802, o navio mercante Obra Dinn partiu de Londres para o Oriente com mais de duzentas toneladas de mercadoria.
+                    Seis meses depois, ainda não havia chegado ao ponto de encontro no Cabo da Boa Esperança,
+                    sendo então declarado como desaparecido no mar.
+                </p>
+                <p class="desc">
+                    Na manhã de hoje, 14 de outubro de 1807, o Obra Dinn derivou ao porto de Falmouth com velas danificadas e sem qualquer tripulação visível.
+                    No papel do(a) investigador(a) de seguros do escritório londrino da Companhia das Índias Orientais, parta imediatamente a Falmouth,
+                    encontre meios de abordar o navio e elabore um relatório de sinistro.
+                </p>
+                <p>
+                    Return of the Obra Dinn é uma aventura de mistério em primeira pessoa baseada em exploração e dedução lógica.
+                </p>
+            </div>
+            <h1>Requisitos de Sistema</h1>
+            <div class="req">
+                <p><strong>Mínimos:</strong></p>
+                <p>SO: Windows 7 ou acima.</p>
+                <p>Processador: 2 GHz Intel i5 ou melhor.</p>
+                <p>Memória: 4 GB de RAM.</p>
+                <p>Placa de vídeo: Discrete GPU.</p>
+                <p>Armazenamento: 2 GB de espaço disponível.</p>
+            </div>
+            <h1>Avaliações</h1>
+            <div class="reviews" id="mago">
+                <div class="review">
+                    <div class="info-review">
+                        <a href="#pfp-grande1"><img src="img/pfp/mago.jpeg" alt="O Mago dos Games"></a>
+                        <div>
+                            <h4>O Mago</h4>
+                            <p>583 resenhas</p>
+                        </div>
+                    </div>
+                    <div class="corpo-review">
+                        <div class="head-review">
+                            <img src="img/estrelapng" alt="estrelas" width="100px">
+                            <p class="horas">29,5 horas registradas</p>
+                        </div>
+                        <div class="corpo2-review">
+                            <p class="data">DATA DA PUBLICAÇÃO: 1 de abril</p>
+                            <p class="tese">
+                                Bom demais pra quem gosta de investigação, da para descobrir os casos de diversas formas e tal.
+                                Do meio pro final começa a ficar mais difícil, porém mais recompensador. 10/10
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review" id="carlos">
+                    <div class="info-review">
+                        <a href="#pfp-grande2"><img src="img/pfp/carlos.webp" alt="Carlos Birinto"></a>
+                        <div>
+                            <h4>Carlos Birinto</h4>
+                            <p>413 resenhas</p>
+                        </div>
+                    </div>
+                    <div class="corpo-review">
+                        <div class="head-review">
+                            <img src="img/estrelapng" alt="estrelas" width="100px">
+                            <p class="horas">9,1 horas registradas</p>
+                        </div>
+                        <div class="corpo2-review">
+                            <p class="data">DATA DA PUBLICAÇÃO: 25 de dezembro</p>
+                            <p class="tese">
+                                Bom demais pra quem gosta de investigação, da para descobrir os casos de diversas formas e tal.
+                                Do meio pro final começa a ficar mais difícil, porém mais recompensador. 10/10
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review" id="resenhador">
+                    <div class="info-review">
+                        <a href="#pfp-grande3"><img src="img/pfp/resenhador.jpg" alt="Resenhador Noturno"></a>
+                        <div>
+                            <h4>Resenhador Noturno</h4>
+                            <p>+9999 resenhas</p>
+                        </div>
+                    </div>
+                    <div class="corpo-review">
+                        <div class="head-review">
+                            <img src="img/estrelapng" alt="estrelas" width="100px">
+                            <p class="horas">14,2 horas registradas</p>
+                        </div>
+                        <div class="corpo2-review">
+                            <p class="data">DATA DA PUBLICAÇÃO: 6 de março</p>
+                            <p class="tese">
+                                Bom demais pra quem gosta de investigação, da para descobrir os casos de diversas formas e tal.
+                                Do meio pro final começa a ficar mais difícil, porém mais recompensador. 10/10
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review" id="lloyd">
+                    <div class="info-review">
+                        <a href="#pfp-grande4"><img src="img/pfp/lloyd.png" alt="Água"></a>
+                        <div>
+                            <h4>Lloyd = Água</h4>
+                            <p>80 resenhas</p>
+                        </div>
+                    </div>
+                    <div class="corpo-review">
+                        <div class="head-review">
+                            <img src="img/estrelapng" alt="estrelas" width="100px">
+                            <p class="horas">11,6 horas registradas</p>
+                        </div>
+                        <div class="corpo2-review">
+                            <p class="data">DATA DA PUBLICAÇÃO: 16 de julho</p>
+                            <p class="tese">
+                                Bom demais pra quem gosta de investigação, da para descobrir os casos de diversas formas e tal.
+                                Do meio pro final começa a ficar mais difícil, porém mais recompensador. 10/10
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pfp-grande1" class="grande">
+            <a href="#mago" class="close">×</a>
+            <img src="img/pfp/mago.jpeg" alt="Imagem Grande">
+        </div>
+        <div id="pfp-grande2" class="grande">
+            <a href="#carlos" class="close">×</a>
+            <img src="img/pfp/carlos.webp" alt="Imagem Grande">
+        </div>
+        <div id="pfp-grande3" class="grande">
+            <a href="#resenhador" class="close">×</a>
+            <img src="img/pfp/resenhador.jpg" alt="Imagem Grande">
+        </div>
+        <div id="pfp-grande4" class="grande">
+            <a href="#lloyd" class="close">×</a>
+            <img src="img/pfp/lloyd.png" alt="Imagem Grande">
+        </div>
         <div id="img-grande1" class="grande">
             <a href="#" class="close">×</a>
             <img src="img/obra-dinn/img1.jpg" alt="Imagem Grande">
@@ -104,6 +303,8 @@
             <img src="img/obra-dinn/img10.jpg" alt="Imagem Grande">
         </div>
     </main>
-</div>
 </body>
+    <footer>
+        <p class="copy">&copy; 2026 Teams. Todos os direitos reservados.</p>
+    </footer>
 </html>
