@@ -7,37 +7,50 @@
     <title>Cadastro</title>
 </head>
 <body class="color10">
-    <!-- 
-    Página de cadastro de usuário contendo: 
-    NOME, LOGIN, SENHA, CPF, DATA de NASCIMENTO e E-MAIL; 
-    -->
+    <header class="header">
+        <div class="logo" style="box-shadow: 0 0 10px 2px #27002b; margin-bottom: 10vh;">
+            <img id="logo" src="img/logo.png" alt="Logo do Teams" width="100vw">
+            <nav class="nav1">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Comunidade</a></li>
+                    <li><a href="#">Perfil</a></li>
+                </ul>   
+            </nav>
+            <a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras" id="carrinho" width="10vw"></a>
+    </header>
     <main>
         <form action="#" class="cadastro">
             <h2>Cadastro de Usúario</h2>
 
             <label for="#">Nome:</label>
-            <input type="text" min="1" max="50" placeholder="Digite seu Nome aqui">
+            <input type="text" min="1" max="50" placeholder="Digite seu Nome">
 
             <label for="#">Login:</label>
-            <input type="text" min="1" max="50" placeholder="Digite seu Login aqui">
+            <input type="text" min="1" max="50" placeholder="Digite seu Login">
 
             <label for="#">Senha:</label>
-            <input type="text" min="1" max="50" placeholder="Digite sua Senha aqui">
+            <input type="text" min="1" max="50" placeholder="Digite sua Senha">
 
             <label for="#">CPF:</label>
-            <input type="number" max="11" placeholder="Digite seu CPF aqui">
+            <input type="number" max="11" placeholder="Digite seu CPF">
 
             <label for="#">Data de Nascimento:</label>
-            <input type="date" placeholder="Digite sua Data de Nascimento aqui">
+            <input type="date" placeholder="Digite sua Data de Nascimento">
 
             <label for="#">E-Mail:</label>
-            <input type="email" min="1" max="100" placeholder="Digite seu E-Mail aqui">
+            <input type="email" min="1" max="100" placeholder="Digite seu E-Mail">
 
             <div class="center">
                 <button type="submit" class="botao_enviar">Enviar</button>
                 <button type="reset"  class="botao_apagar">Apagar</button>
+                <a href="login.html">Já possui uma conta? <u>Faça o login</u></a>
             </div>
         </form>
     </main>
+    <footer>
+        <p class="copy">&copy; 2026 Teams. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

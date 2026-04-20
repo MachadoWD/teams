@@ -52,20 +52,10 @@ main{
 
 .jogo button{
     margin: 0.5em 1em;
-    color: #fff;
-/*  background-color: #9857a7; */
-    border-style:ridge;
     width: 90%;
     height: 2em;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 5px;
-    border-color: #27002b;
 }
 
-.jogo button:hover{
-    background-color: #b06ebe;
-}
 .jogo p{
     margin: 0.5em 1em;
     color: #fff;
@@ -359,12 +349,19 @@ footer .copy {
     box-shadow: 0 0 5px 2px #27002b;
 }
 
-
 .c-jogo .info {
     display: flex;
     flex-direction: column;
     gap: 2vh;
     width: 12vw;
+}
+
+.c-jogo img {
+    transition: all 0.3s ease;
+}
+
+.c-jogo img:hover {
+    opacity: 0.7;
 }
 
 .info h3 {
@@ -405,10 +402,31 @@ footer .copy {
     transition: all 0.3s ease;
 }
 
-.escolhas button:hover, .pagar:hover {
+.escolhas button:hover {
     cursor: pointer;
     opacity: 1;
     box-shadow: 0 0 5px 0.5px #27002b;
+}
+
+.pagar {
+    width: 20vw !important;
+    height: 3.6vh !important;
+}
+
+.pagar:hover {
+    box-shadow: 0 0 10px 1px white !important;
+    background-color: white !important;
+    transform: scale(1) !important;
+    color: black !important;
+}
+
+.pagar:active {
+    transform: scale(1.1) !important;
+}
+
+.pagamento a {
+    padding: 0;
+    margin: 0;
 }
 
 .escolhas button:active, .pagar:active {
@@ -467,16 +485,23 @@ footer .copy {
     display: grid; 
     gap: 0.5em;
     width: 26vw;
-    height: 60vh;
+    height: 70vh;
     padding: 2em;
 }
 
+.center a {
+    font-size: 0.8vw;
+}
 
 .center{
     margin-top: 1em;
     display: grid;
     gap: 1em;
     place-items: center;
+}
+
+.center a:hover {
+    text-decoration: none;
 }
 
 .login{
@@ -517,8 +542,8 @@ button:hover {
 .botao_apagar:hover, .botao_enviar:hover{
     color: white;
     background-color: #83239b;
-    box-shadow: 0 0 10px 1px #7f1f97;
     transform: scale(1.03);
+    box-shadow: 0 0 10px 2px #27002b;
 }
 
 .botao_apagar:active, .botao_enviar:active {
@@ -928,4 +953,96 @@ div.req {
     cursor: pointer;
     opacity: 0.4;
     transform: scale(1.1);
+}
+
+.main-pagamento {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 63vh;
+}
+
+.main-pagamento h1 {
+    margin-bottom: 12vh;;
+}
+
+.credito div {
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0.4vw !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.debito div button {
+    width: 100%;
+    height: 5vh !important;
+}
+
+.credito div button:hover, .debito div button:hover {
+    box-shadow: 0 0 10px 2px #27002b;
+}
+
+.main-pagamento .formas-pag {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    background-color: #8d28a7;
+    padding: 2vw;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 10px 2px #27002b
+}
+
+.credito, .debito {
+    display: flex;
+    flex-direction: column !important;
+    gap: 0 !important;
+}
+
+.debito div button {
+    margin-top: 2vh;
+    background-color: rgb(56, 17, 231);
+    font-weight: bolder;
+    color: white;
+}
+
+.debito div button, .credito div button {
+    height: 5vh;
+    font-size: 0.8vw;
+}
+
+.pix div button, .boleto div button {
+    margin-left: 0;
+}
+
+.formas-pag div {
+    width: 13.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pix h2, .boleto h2, .credito h2, .debito h2 {
+    font-size: 1.3vw;
+}
+
+.b-pix.botao_enviar {
+    background-color: rgb(180, 7, 88);
+}
+
+.b-boleto.botao_enviar {
+    background-color: rgb(255, 94, 0);
+}
+
+.b-pix:hover, .b-boleto:hover {
+    background-color: #83239b;
+}
+
+.main-log {
+    height: 67.9vh;
 }
