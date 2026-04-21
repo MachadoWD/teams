@@ -426,14 +426,17 @@ footer .copy {
 }
 
 .pagamento a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 2vh !important;
-    height: 3vh;
-    text-align: center;
+    height: 3.6vh;
     margin: 0;
     text-decoration: none;
 }
 
 .pagamento a p {
+    font-size: 0.9vw;
     color: black;
 }
 
@@ -494,7 +497,7 @@ footer .copy {
     gap: 0.5em;
     width: 26vw;
     margin: 0;
-    height: 70vh;
+    height: 80vh;
     padding: 2em;
 }
 
@@ -517,6 +520,10 @@ footer .copy {
 
 .center a {
     font-size: 0.8vw;
+}
+
+body {
+    height: 100vh;
 }
 
 .center{
@@ -1092,6 +1099,6 @@ div.req {
     height: 72.9vh;
 }
 
-.logo-log {
-    margin-bottom: 5vh !important;
+.f-pag {
+    height: 8vh;
 }
