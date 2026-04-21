@@ -426,8 +426,15 @@ footer .copy {
 }
 
 .pagamento a {
-    padding: 0;
+    margin-top: 2vh !important;
+    height: 3vh;
+    text-align: center;
     margin: 0;
+    text-decoration: none;
+}
+
+.pagamento a p {
+    color: black;
 }
 
 .escolhas button:active, .pagar:active {
@@ -771,7 +778,7 @@ video:hover {
     justify-items: flex-start;
     flex-direction: row;
     box-shadow: 0 0 10px 1px #27002b;
-    transition: all 0.3s ease;
+    transition: all 0.16s ease;
 }
 
 .head-jogo:hover {
@@ -804,7 +811,6 @@ video:hover {
 }
 
 .sobre:hover, .review:hover, .req:hover {
-    transform: scale(1.005);
     box-shadow: 0 0 10px 1px #27002b;
 }
 
@@ -867,7 +873,7 @@ div.req {
     width: 15vw;
 }
 
-.info-review h4 {
+.info-review h2 {
     margin-top: 1vh;
     font-size: 0.9vw;
     margin-bottom: 0.6vh;
@@ -926,7 +932,7 @@ div.req {
 .horas {
     opacity: 0.9;
     margin-top: 1.7vh;
-    margin-left: 1,5vw;
+    margin-left: 1.5vw;
 }
 
 .head-review img {
@@ -953,7 +959,6 @@ div.req {
     display: flex;
     width: 7.4vw;
     padding: 0.9vw;
-    padding-right: 0.4;
     flex-direction: column;
     margin-left: 5vw;
     margin-top: 4vh;
@@ -1084,5 +1089,9 @@ div.req {
 }
 
 .main-log {
-    height: 67.9vh;
+    height: 72.9vh;
+}
+
+.logo-log {
+    margin-bottom: 5vh !important;
 }
