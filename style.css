@@ -436,7 +436,7 @@ footer .copy {
 }
 
 .pagamento a p {
-    font-size: 0.9vw;
+    font-size: 0.8vw;
     color: black;
 }
 
@@ -850,6 +850,11 @@ video:hover {
 .sobre p.desc {
     display: block;
     margin-bottom: 3vh;
+}
+
+.resto p {
+    font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+    opacity: 0.85 !important;
 }
 
 div.req {
