@@ -179,6 +179,7 @@ form {
 
 form:hover {
     box-shadow: 0 0 5px 3px #8920a3;
+    transform: scale(1.01);
 }
 
 input {
@@ -485,8 +486,26 @@ footer .copy {
     display: grid; 
     gap: 0.5em;
     width: 26vw;
+    margin: 0;
     height: 70vh;
     padding: 2em;
+}
+
+.cadastro, .login {
+    box-shadow: 0 0 10px 1px #27002b;
+    border-radius: 0 20px 0 20px;
+}
+
+.cadastro input, .login input {
+    transition: all 0.3s ease;
+}
+
+.cadastro input:focus, .login input:focus {
+    transform: scale(1.02);
+}
+
+.cadastro:hover, .login:hover {
+    transform: scale(1.01);
 }
 
 .center a {
@@ -510,6 +529,7 @@ footer .copy {
     display: grid; 
     gap: 0.5em;
     width: 26vw;
+    margin: 0;
     height: 25em;
     padding: 2em;
 }
@@ -565,6 +585,7 @@ button:hover {
 }
 
 .info-jogo:hover {
+    transform: scale(1.015);
     box-shadow: 0 0 10px 3px #45014d;
 }
 
@@ -750,6 +771,12 @@ video:hover {
     justify-items: flex-start;
     flex-direction: row;
     box-shadow: 0 0 10px 1px #27002b;
+    transition: all 0.3s ease;
+}
+
+.head-jogo:hover {
+    transform: scale(1.003);
+    box-shadow: 0 0 10px 6px #27002b
 }
 
 .main-jogo {
@@ -772,12 +799,19 @@ video:hover {
     background-color: #8d28a740;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    transition: all 0.3s ease;
     box-shadow: 0 0 10px 0.5px #8d28a740;
+}
+
+.sobre:hover, .review:hover, .req:hover {
+    transform: scale(1.005);
+    box-shadow: 0 0 10px 1px #27002b;
 }
 
 .resto h1 {
     font-size: 1.2vw;
     margin-top: 6vh;
+    margin-bottom: 0.5vh;
     width: 52vw;
     padding-left: 0.5vw;
     box-shadow: 0px 10px 10px -1vh #27002b;
@@ -994,7 +1028,13 @@ div.req {
     padding: 2vw;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    transition: all 0.3s ease;
     box-shadow: 0 0 10px 2px #27002b
+}
+
+.formas-pag:hover {
+    box-shadow: 0 0 10px 6px #27002b;
+    transform: scale(1.02);
 }
 
 .credito, .debito {
