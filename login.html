@@ -8,8 +8,9 @@
 </head>
 <body class="color10">
     <header class="header">
-        <div class="logo" style="box-shadow: 0 0 10px 2px #27002b; margin-bottom: 10vh;">
-            <img id="logo" src="img/logo.png" alt="Logo do Teams" width="100vw">
+
+        <div class="logo">
+            <img id="logo" src="img/logo.png" alt="Logo do Teams">
             <nav class="nav1">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -18,7 +19,34 @@
                     <li><a href="#">Perfil</a></li>
                 </ul>   
             </nav>
-            <a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras" id="carrinho" width="10vw"></a>
+            <a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras" id="carrinho"></a>
+        </div>
+
+        <div class="search-bar">
+            <nav class="cat">
+                <ul class="nav-links2">
+                    <li class="dropdown">
+                        Categorias
+                        <ul class="submenu">
+                            <li>Investigação</li>
+                            <li>Shooter</li>
+                            <li>RPG</li>
+                            <li>Indie</li>
+                            <li>Roguelike</li>
+                        </ul>
+                    </li>
+                    <li>Explorar</li>
+                    <li>Recomendações</li>
+                    <li>Wishlist</li>
+                </ul>
+            </nav>
+
+            <form>
+                <input type="text" placeholder="Digite sua busca...">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+
     </header>
     <main class="main-log">
         <form action="#" class="login">
@@ -26,11 +54,11 @@
                 <h2>Login</h2>
             </div>
 
-            <label for="#">Login:</label>
-            <input type="text" min="1" max="50" placeholder="Digite seu Login">
+            <label for="login">Login:</label>
+            <input id="login" type="text" placeholder="Digite seu Login">
 
-            <label for="#">Senha:</label>
-            <input type="text" min="1" max="50" placeholder="Digite sua Senha">
+            <label for="senha">Senha:</label>
+            <input id="senha"type="text" placeholder="Digite sua Senha">
 
             <div class="center ">
                 <button type="submit" class="botao_enviar">Enviar</button>

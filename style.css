@@ -179,6 +179,7 @@ form {
 
 form:hover {
     box-shadow: 0 0 5px 3px #8920a3;
+    transform: scale(1.01);
 }
 
 input {
@@ -425,8 +426,18 @@ footer .copy {
 }
 
 .pagamento a {
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh !important;
+    height: 3.6vh;
     margin: 0;
+    text-decoration: none;
+}
+
+.pagamento a p {
+    font-size: 0.8vw;
+    color: black;
 }
 
 .escolhas button:active, .pagar:active {
@@ -485,12 +496,34 @@ footer .copy {
     display: grid; 
     gap: 0.5em;
     width: 26vw;
-    height: 70vh;
+    margin: 0;
+    height: 80vh;
     padding: 2em;
+}
+
+.cadastro, .login {
+    box-shadow: 0 0 10px 1px #27002b;
+    border-radius: 0 20px 0 20px;
+}
+
+.cadastro input, .login input {
+    transition: all 0.3s ease;
+}
+
+.cadastro input:focus, .login input:focus {
+    transform: scale(1.02);
+}
+
+.cadastro:hover, .login:hover {
+    transform: scale(1.01);
 }
 
 .center a {
     font-size: 0.8vw;
+}
+
+body {
+    height: 100vh;
 }
 
 .center{
@@ -510,6 +543,7 @@ footer .copy {
     display: grid; 
     gap: 0.5em;
     width: 26vw;
+    margin: 0;
     height: 25em;
     padding: 2em;
 }
@@ -565,6 +599,7 @@ button:hover {
 }
 
 .info-jogo:hover {
+    transform: scale(1.015);
     box-shadow: 0 0 10px 3px #45014d;
 }
 
@@ -750,6 +785,12 @@ video:hover {
     justify-items: flex-start;
     flex-direction: row;
     box-shadow: 0 0 10px 1px #27002b;
+    transition: all 0.16s ease;
+}
+
+.head-jogo:hover {
+    transform: scale(1.003);
+    box-shadow: 0 0 10px 6px #27002b
 }
 
 .main-jogo {
@@ -772,12 +813,18 @@ video:hover {
     background-color: #8d28a740;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    transition: all 0.3s ease;
     box-shadow: 0 0 10px 0.5px #8d28a740;
+}
+
+.sobre:hover, .review:hover, .req:hover {
+    box-shadow: 0 0 10px 1px #27002b;
 }
 
 .resto h1 {
     font-size: 1.2vw;
     margin-top: 6vh;
+    margin-bottom: 0.5vh;
     width: 52vw;
     padding-left: 0.5vw;
     box-shadow: 0px 10px 10px -1vh #27002b;
@@ -803,6 +850,11 @@ video:hover {
 .sobre p.desc {
     display: block;
     margin-bottom: 3vh;
+}
+
+.resto p {
+    font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+    opacity: 0.85 !important;
 }
 
 div.req {
@@ -833,7 +885,7 @@ div.req {
     width: 15vw;
 }
 
-.info-review h4 {
+.info-review h2 {
     margin-top: 1vh;
     font-size: 0.9vw;
     margin-bottom: 0.6vh;
@@ -892,7 +944,7 @@ div.req {
 .horas {
     opacity: 0.9;
     margin-top: 1.7vh;
-    margin-left: 1,5vw;
+    margin-left: 1.5vw;
 }
 
 .head-review img {
@@ -919,7 +971,6 @@ div.req {
     display: flex;
     width: 7.4vw;
     padding: 0.9vw;
-    padding-right: 0.4;
     flex-direction: column;
     margin-left: 5vw;
     margin-top: 4vh;
@@ -994,7 +1045,13 @@ div.req {
     padding: 2vw;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    transition: all 0.3s ease;
     box-shadow: 0 0 10px 2px #27002b
+}
+
+.formas-pag:hover {
+    box-shadow: 0 0 10px 6px #27002b;
+    transform: scale(1.02);
 }
 
 .credito, .debito {
@@ -1044,5 +1101,9 @@ div.req {
 }
 
 .main-log {
-    height: 67.9vh;
+    height: 72.9vh;
+}
+
+.f-pag {
+    height: 8vh;
 }
