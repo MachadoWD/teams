@@ -121,8 +121,7 @@ ul.nav-links a {
 }
 
 ul.nav-links li:hover {
-    transform: scale(1.1);
-    text-shadow: 0 0 10px #b06ebe;
+    text-shadow: 0 0 20px #b06ebe;
     cursor: pointer;
 }
 
@@ -178,8 +177,7 @@ form {
 }
 
 form:hover {
-    box-shadow: 0 0 5px 3px #8920a3;
-    transform: scale(1.01);
+    box-shadow: 0 0 5px 3px #8920a3;   
 }
 
 input {
@@ -463,7 +461,7 @@ footer .copy {
 }
 
 .pagamento:hover {
-    transform: scale(1.01);
+
     box-shadow: 0 0 10px 4px #27002b;
 }
 
@@ -508,14 +506,6 @@ footer .copy {
 
 .cadastro input, .login input {
     transition: all 0.3s ease;
-}
-
-.cadastro input:focus, .login input:focus {
-    transform: scale(1.02);
-}
-
-.cadastro:hover, .login:hover {
-    transform: scale(1.01);
 }
 
 .center a {
@@ -599,7 +589,6 @@ button:hover {
 }
 
 .info-jogo:hover {
-    transform: scale(1.015);
     box-shadow: 0 0 10px 3px #45014d;
 }
 
@@ -689,7 +678,6 @@ p{
 
 .imagens img:hover {
     transform: scale(1.05);
-    opacity: 0.8;
 }
 
 video {
@@ -789,7 +777,6 @@ video:hover {
 }
 
 .head-jogo:hover {
-    transform: scale(1.003);
     box-shadow: 0 0 10px 6px #27002b
 }
 
@@ -906,7 +893,6 @@ div.req {
 }
 
 .info-review img:hover {
-    opacity: 0.8;
     transform: scale(1.05);
 }
 
@@ -1051,7 +1037,6 @@ div.req {
 
 .formas-pag:hover {
     box-shadow: 0 0 10px 6px #27002b;
-    transform: scale(1.02);
 }
 
 .credito, .debito {
