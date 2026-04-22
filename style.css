@@ -310,7 +310,6 @@ footer .copy {
 }
 
 .main-carrinho {
-    height: 90vh;
     align-content: baseline !important;
 }
 
@@ -390,9 +389,10 @@ footer .copy {
     margin-top: 6vh;
 }
 
-.escolhas button, .pagar {
+.escolhas button, .pagar, .info button {
     border: none;
-    padding: 0.3vw;
+    width: 4vw;
+    height: 2.4vh;
     font-size: 0.7vw;
     opacity: 0.8;
     background-color: #27002b;
@@ -401,7 +401,7 @@ footer .copy {
     transition: all 0.3s ease;
 }
 
-.escolhas button:hover {
+.escolhas button:hover, .info button:hover {
     cursor: pointer;
     opacity: 1;
     box-shadow: 0 0 5px 0.5px #27002b;
@@ -438,7 +438,7 @@ footer .copy {
     color: black;
 }
 
-.escolhas button:active, .pagar:active {
+.escolhas button:active, .pagar:active, .info button:active {
     opacity: 0.5;
 }
 
@@ -756,7 +756,7 @@ video:hover {
 }
 
 #seisete {
-    margin-left: 2vw;
+    margin-left: 1vw;
 }
 
 .container {
@@ -883,7 +883,8 @@ div.req {
     opacity: 0.7;
 }
 
-.info-review img, .info-review a {
+.info-review img, .info-review a, .minhapfp {
+    display: flex;
     width: 4vw;
     height: 4vw;
     border-radius: 10%;
@@ -892,11 +893,11 @@ div.req {
     transition: all 0.3s ease;
 }
 
-.info-review img:hover {
+.info-review img:hover, .minhapfp:hover {
     transform: scale(1.05);
 }
 
-.info-review img:active {
+.info-review img:active, .minhapfp:active {
     opacity: 0.4;
     transform: scale(1.4);
 }
@@ -953,13 +954,13 @@ div.req {
     margin-bottom: 2vh;
 }
 
-.tags ul {
+.tags ul, .wish-tags {
     display: flex;
     width: 7.4vw;
     padding: 0.9vw;
     flex-direction: column;
-    margin-left: 5vw;
-    margin-top: 4vh;
+    margin-left: 4vw;
+    margin-top: 2vh;
     list-style-type: none;
     font-size: 0.8vw;
     box-shadow: 0 0 10px 0.5px #45014d;
@@ -972,7 +973,7 @@ div.req {
     box-shadow: 0 0 10px 3px #45014d;
 }
 
-.tags ul li {
+.tags ul li, .wish-tags li {
     transition: all 0.3s ease;
     width: 6.7vw;
     padding: 0.4vw;
@@ -980,7 +981,7 @@ div.req {
     padding-bottom: 1vh;
 }
 
-.tags ul li:hover {
+.tags ul li:hover, .wish-tags li:hover{
     background-color: #a730c570;
     cursor: pointer;
     transform: scale(1.05);
@@ -998,7 +999,7 @@ div.req {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 63vh;
+    height: 80vh;
 }
 
 .main-pagamento h1 {
@@ -1089,6 +1090,160 @@ div.req {
     height: 72.9vh;
 }
 
-.f-pag {
-    height: 8vh;
+.header-wishlist {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    flex-direction: row;
+    margin-bottom: 5vh;
+}
+
+.header-wishlist h1 {
+    margin: 0;
+    font-size: 2vw;
+}
+
+.conteudo-wishlist, .conteudo-wishlist .c-jogos {
+    width: 65vw;
+}
+
+.conteudo-wishlist .c-jogo {
+    width: 63vw;
+}
+
+.conteudo-wishlist .c-jogo .infomaior {
+    width: 42vw;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.conteudo-wishlist .c-jogo .info {
+    flex-direction: row;
+    width: 42vw;
+    height: 5vh;
+    align-items: center;
+    gap: 0;
+}
+
+.conteudo-wishlist .c-jogo .info button {
+    margin: 0;
+}
+
+.conteudo-wishlist .info h2 {
+    font-size: 1.3vw;
+    width: 26vw;
+}
+
+.info div {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+}
+
+.info div p {
+    margin: 0;
+}
+
+.conteudo-wishlist .c-jogo {
+    height: 9.5vw;
+}
+
+.conteudo-wishlist .c-img-jogo {
+    width: 20vw;
+}
+
+.wish-tags {
+    flex-direction: row;
+    box-shadow: none;
+    background-color: transparent;
+    gap: 0.8vw;
+    margin: 0;
+    width: 35vw;
+    height: 1.2vw;
+    padding: 0;
+    margin-top: 0.4vw;
+    margin-left: 0.3vw;
+}
+
+.wish-tags li {
+    box-shadow: 0 0 3px 0.001px #27002b;
+    border-radius: 0.3vw;
+    display: flex;
+    width: auto;
+    padding: 0.2vw;
+    align-items: center;
+    background-color:#9320ad30;
+}
+
+.wish-tags li:hover {
+    transform: none;
+    background-color: #a730c5;;
+}
+
+.wish-tags li:active {
+    opacity: 0.4;
+}
+
+.w-nota-data {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4vw;
+}
+
+.w-jogo-baixo {
+    display: flex;
+    flex-direction: row;
+}
+
+.w-comprar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 13vw;
+}
+
+.w-comprar h3 {
+    font-size: 2.2vw;
+    margin-left: 1vw;
+}
+
+.w-jogo-baixo p {
+    font-size: 0.9vw;
+    opacity: 0.8;
+}
+
+.w-comprar div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.8vw;
+    gap: 0.2vw;
+}
+
+.w-comprar div button {
+    width: 6vw;
+    height: 1.7vw;
+    font-size: 0.8vw;
+}
+
+ul li a {
+    text-decoration: none !important;
+}
+
+.img-ruim {
+    height: 9.5vw;
+    object-fit: cover;
+}
+
+.add-wish {
+    font-size: 0.6vw; 
+    width: 8vw;
+    margin-left: 1vw;
+    background-color:#9320ad;
+    color: white;
+    font-weight: bold;
 }
