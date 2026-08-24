@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>jogo</title>
 </head>
 <body class="color10">
@@ -82,8 +83,12 @@
                             <p>Desaparecido no Mar, 1803 O BOM NAVIO "OBRA DINN".</p>
                         </div>
                         <div class="flex center botoes" style="margin-bottom: 2%;">
-                            <button class="botao_enviar">Comprar</button>
-                            <button class="botao_apagar">+ Carrinho</button>
+                            <button id="reduzir" class="botao_enviar">- Carrinho</button>
+                            <button id="adicionar" class="botao_apagar">+ Carrinho</button>
+                        </div>
+                        <div class="flex center botoes">
+                            <p id="qnt" class="botao_enviar">Quantidade: 0</p>
+                            <p id="total" class="botao_enviar">Total: R$ 0,00</p>
                         </div>
                         <div class="comp">
                             <div class="classificacao xyz color01">

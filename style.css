@@ -541,11 +541,21 @@ body {
 .botao_enviar{
     background-color: #ffffff;
     color: #27002b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
     height: 3em;
     border: none;
     border-radius: 20px;
     transition: all 0.3s ease;
+}
+
+p.botao_enviar {
+    background-color:#9320ad;
+    color: white;
+    width: 200px;
+    font-size: 14px;
 }
 
 .botao_apagar{
@@ -563,7 +573,7 @@ button:hover {
     cursor: pointer;
 }
 
-.botao_apagar:hover, .botao_enviar:hover{
+.botao_apagar:hover, .botao_enviar:not(p):hover{
     color: white;
     background-color: #83239b;
     transform: scale(1.03);
