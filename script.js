@@ -156,3 +156,78 @@ if (document.getElementById("adicionar")) {
         totalP.textContent = `Total: R$${(quantidade * 59.99).toFixed(2).replace(".", ",")}`;
     }
 }
+
+function atualizarTotalJogo(value) {
+    const qnt1 = parseInt(document.getElementById("qnt1").value);
+    const qnt2 = parseInt(document.getElementById("qnt2").value);
+    const qnt3 = parseInt(document.getElementById("qnt3").value);   
+
+    const totalJogo = document.getElementById("totalJogo");
+
+    switch (value) {
+        case 1:
+            const total1 = (qnt1 * 49.99).toFixed(2).replace(".", ",");
+            document.getElementById("total1").textContent = `Total: R$${total1}`;
+            break;
+        case 2:
+            const total2 = (qnt2 * 32.99).toFixed(2).replace(".", ",");
+            document.getElementById("total2").textContent = `Total: R$${total2}`;
+            break;
+        case 3:
+            const total3 = (qnt3 * 75.49).toFixed(2).replace(".", ",");
+            document.getElementById("total3").textContent = `Total: R$${total3}`;
+            break;
+
+    }
+}
+
+function atualizarTotal() {
+    const qnt1 = parseInt(document.getElementById("qnt1").value);
+    const qnt2 = parseInt(document.getElementById("qnt2").value);
+    const qnt3 = parseInt(document.getElementById("qnt3").value);   
+
+    const preco1 = 49.99;
+    const preco2 = 32.99;
+    const preco3 = 75.49;
+
+    const total = (qnt1 * preco1) + (qnt2 * preco2) + (qnt3 * preco3);
+    document.getElementById("total").textContent = `R$${total.toFixed(2).replace(".", ",")}`;
+
+}
+
+
+function calcularFrete(){
+    const cep = document.getElementById("cep").value;
+
+    if (cep.length === 8) {
+        if (cep == "88495000") {
+            document.getElementById("frete").textContent = "+ R$10,00 frete";
+        }
+        else if (cep == "88780000") {
+            document.getElementById("frete").textContent = "+ R$15,00 frete";
+        }
+        else if (cep == "88490000") {
+            document.getElementById("frete").textContent = "+ R$2000,00 frete";
+        }
+    }
+}
+
+let cupomDescontoAplicado = 0;
+let cupomFreteAplicado = 0;
+function aplicarCupom() {
+    const cupom = document.getElementById("cupom").value;
+    const totalElement = document.getElementById("total");
+    let total = parseFloat(totalElement.textContent.replace("R$", "").replace(",", "."));
+
+    
+    if (cupom === "INFO24" && cupomDescontoAplicado === 0) {
+        total *= 0.76; // Aplica desconto de 24%
+        totalElement.textContent = `R$${total.toFixed(2).replace(".", ",")}`;
+        cupomDescontoAplicado = 1;
+    } else if (cupom === "CASADOEDU" && cupomFreteAplicado === 0) {
+        const freteElement = document.getElementById("frete");
+        freteElement.textContent = "+ R$0,00 frete";
+        cupomFreteAplicado = 1;
+    }
+
+}
