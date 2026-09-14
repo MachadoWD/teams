@@ -306,7 +306,7 @@ footer .copy {
 }
 
 .carrinho {
-    width: 70vw;
+    width: 80vw;
 }
 
 .main-carrinho {
@@ -423,18 +423,22 @@ footer .copy {
     transform: scale(1.1) !important;
 }
 
+.pagamento{
+    width: 100vw;
+}
+
 .pagamento a {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2vh !important;
-    height: 3.6vh;
+    height: 3.5vh;
     margin: 0;
     text-decoration: none;
 }
 
 .pagamento a p {
-    font-size: 0.8vw;
+    font-size: 1vw;
     color: black;
 }
 
@@ -469,7 +473,7 @@ footer .copy {
     font-size: 0.6vw;
     display: flex;
     flex-direction: row;
-    gap: 2.4vw;
+    gap: 0.2vw;
 }
 
 .conteudo {
@@ -1256,4 +1260,20 @@ ul li a {
     background-color:#9320ad;
     color: white;
     font-weight: bold;
+}
+
+/* Carrinho */
+.quantidade{
+    width: 3vw;
+    height: 1.5vw;
+    text-align: center;
+    background-color:#9320ad;
+    color: white;
+    font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
