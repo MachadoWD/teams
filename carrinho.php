@@ -1,57 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teams</title>
-</head>
-<body class="color10">
-    <!--loja virtual de jogos digitais -->
-    <header class="header">
+<?php
+// Página protegida: só acessível para usuários logados.
+require_once __DIR__ . '/includes/protegido.php';
 
-        <div class="logo">
-            <img id="logo" src="img/logo.png" alt="Logo do Teams">
-            <nav class="nav1">
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Comunidade</a></li>
-                    <li><a href="#">Perfil</a></li>
-                </ul>   
-            </nav>
-            <a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras" id="carrinho"></a>
-        </div>
-
-        <div class="search-bar">
-            <nav class="cat">
-                <ul class="nav-links2">
-                    <li class="dropdown">
-                        Categorias
-                        <ul class="submenu">
-                            <li>Investigação</li>
-                            <li>Shooter</li>
-                            <li>RPG</li>
-                            <li>Indie</li>
-                            <li>Roguelike</li>
-                        </ul>
-                    </li>
-                    <li>Explorar</li>
-                    <li>Recomendações</li>
-                    <li><a href="wishlist.html">Wishlist</a></li>
-                </ul>
-            </nav>
-
-            <form>
-                <input type="text" placeholder="Digite sua busca...">
-                <button type="submit">Pesquisar</button>
-            </form>
-        </div>
-
-    </header>
+$titulo = 'Teams - Carrinho';
+include __DIR__ . '/includes/header.php';
+?>
     <main class="main-carrinho">
         <div class="carrinho">
             <h1> Seu Carrinho</h1>
+            <p>Olá, <?= e($_SESSION['usuario_nome']) ?>! (<a href="logout.php"><u>Sair</u></a>)</p>
             <div class="conteudo">
             <div class="c-jogos">
                 <div class="c-jogo">
@@ -122,10 +79,4 @@
             </div>
         </div>
     </main>
-    <footer>
-        <p class="copy">&copy; 2026 Teams. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>   
-</body>
-</html>
+<?php include __DIR__ . '/includes/footer.php'; ?>

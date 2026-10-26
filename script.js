@@ -25,109 +25,60 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-if (document.getElementById("enviar")) {
-    let loginInput = document.getElementById("login");
-    let senhaInput = document.getElementById("senha");
-    let enviar = document.getElementById("enviar");
-    let form = document.querySelector(".login");
-
-    enviar.addEventListener("click", (event) => {
-        event.preventDefault();
-        logar(loginInput.value, senhaInput.value);
+// ---------- Validação no navegador (login e cadastro) ----------
+// A validação definitiva é feita no servidor (PHP); aqui só evitamos envios vazios.
+function mostrarErros(form, mensagens) {
+    form.querySelectorAll(".mensagem-erro.js").forEach(el => el.remove());
+    mensagens.forEach(texto => {
+        const caixa = document.createElement("div");
+        caixa.classList.add("mensagem-erro", "js");
+        const p = document.createElement("p");
+        p.textContent = texto;
+        caixa.appendChild(p);
+        form.insertBefore(caixa, form.querySelector(".center:last-child") || null);
     });
+}
 
-    function logar(login, senha) {
-        const erroAntigo = document.querySelector(".mensagem-erro");
-        if (erroAntigo) {
-            erroAntigo.remove();
-        }
+if (document.getElementById("enviar")) {
+    const form = document.querySelector(".login");
 
-        if (login.trim() === "" || senha.trim() === "") {
-            const erroLogin = document.createElement("div");
-            erroLogin.classList.add("mensagem-erro");
-            let erro = document.createElement("p");
-            erro.style.color = 'rgb(167, 6, 6)';
-            erro.textContent = "É necessário digitar usuário e senha para prosseguir.";
-            erroLogin.appendChild(erro);
-            form.appendChild(erroLogin);
+    form.addEventListener("submit", (event) => {
+        const erros = [];
+        if (form.login.value.trim() === "" || form.senha.value.trim() === "") {
+            erros.push("É necessário digitar usuário e senha para prosseguir.");
         }
-    }
+        if (erros.length > 0) {
+            event.preventDefault();
+            mostrarErros(form, erros);
+        }
+    });
 }
 
 if (document.getElementById("enviar-cadastro")) {
-    let loginInput = document.getElementById("login");
-    let senhaInput = document.getElementById("senha");
-    let nomeInput = document.getElementById("nome");
-    let cpfInput = document.getElementById("cpf");
-    let emailInput = document.getElementById("email");
-    let dataInput = document.getElementById("data");
-    let enviar = document.getElementById("enviar-cadastro");
-    let form = document.querySelector(".cadastro");
+    const form = document.querySelector(".cadastro");
 
-    enviar.addEventListener("click", (event) => {
-        event.preventDefault();
-        logar(loginInput.value, senhaInput.value, nomeInput.value, cpfInput.value, emailInput.value, dataInput.value);
+    form.addEventListener("submit", (event) => {
+        const campos = [
+            ["nome", "É necessário digitar o nome"],
+            ["login", "É necessário digitar o login"],
+            ["senha", "É necessário digitar a senha"],
+            ["cpf", "É necessário digitar o cpf"],
+            ["data", "É necessário digitar a data de nascimento"],
+            ["email", "É necessário digitar o email"]
+        ];
+        const erros = campos
+            .filter(([nome]) => form.elements[nome].value.trim() === "")
+            .map(([, mensagem]) => mensagem);
+
+        if (form.senha.value !== "" && form.senha.value.length < 6) {
+            erros.push("A senha deve ter pelo menos 6 caracteres.");
+        }
+
+        if (erros.length > 0) {
+            event.preventDefault();
+            mostrarErros(form, erros);
+        }
     });
-
-    function logar(login, senha, nome, cpf, email, data) {
-        const errosAntigos = document.querySelectorAll(".mensagem-erro");
-        errosAntigos.forEach(erro => erro.remove())
-
-        if (login.trim() === "") {
-            const erroLogin = document.createElement("div");
-            erroLogin.classList.add("mensagem-erro");
-            let erro = document.createElement("p");
-            erro.style.color = 'rgb(167, 6, 6)';
-            erro.textContent = "É necessário digitar o login";
-            erroLogin.appendChild(erro);
-            form.appendChild(erroLogin);
-        }
-        if (senha.trim() === "") {
-            const erroLogin = document.createElement("div");
-            erroLogin.classList.add("mensagem-erro");
-            let erro = document.createElement("p");
-            erro.style.color = 'rgb(167, 6, 6)';
-            erro.textContent = "É necessário digitar a senha";
-            erroLogin.appendChild(erro);
-            form.appendChild(erroLogin);
-        }
-        if (nome.trim() === "") {
-            const erroLogin = document.createElement("div");
-            erroLogin.classList.add("mensagem-erro");
-            let erro = document.createElement("p");
-            erro.style.color = 'rgb(167, 6, 6)';
-            erro.textContent = "É necessário digitar o nome";
-            erroLogin.appendChild(erro);
-            form.appendChild(erroLogin);
-        }
-        if (cpf.trim() === "") {
-            const erroLogin = document.createElement("div");
-            erroLogin.classList.add("mensagem-erro");
-            let erro = document.createElement("p");
-            erro.style.color = 'rgb(167, 6, 6)';
-            erro.textContent = "É necessário digitar o cpf";
-            erroLogin.appendChild(erro);
-            form.appendChild(erroLogin);
-        }
-        if (email.trim() === "") {
-            const erroLogin = document.createElement("div");
-            erroLogin.classList.add("mensagem-erro");
-            let erro = document.createElement("p");
-            erro.style.color = 'rgb(167, 6, 6)';
-            erro.textContent = "É necessário digitar o email";
-            erroLogin.appendChild(erro);
-            form.appendChild(erroLogin);
-        }
-        if (data.trim() === "") {
-            const erroLogin = document.createElement("div");
-            erroLogin.classList.add("mensagem-erro");
-            let erro = document.createElement("p");
-            erro.style.color = 'rgb(167, 6, 6)';
-            erro.textContent = "É necessário digitar a data de nascimento";
-            erroLogin.appendChild(erro);
-            form.appendChild(erroLogin);
-        }
-    }
 }
 
 if (document.getElementById("adicionar")) {

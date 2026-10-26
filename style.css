@@ -1,4 +1,3 @@
-
 .color01 {background-color: #501360; }
 .color02 {background-color: #682a78; }
 .color03 {background-color: #80418f; }
@@ -1276,4 +1275,43 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/* ---------- Mensagens do PHP (Trabalho 3) ---------- */
+.flash {
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    font-weight: bold;
+}
+
+.flash p {
+    margin: 0;
+}
+
+.flash-sucesso {
+    background-color: #1b7a3d;
+}
+
+.flash-erro {
+    background-color: #a70606;
+}
+
+.mensagem-erro p {
+    color: #ffd6d6;
+    background-color: #a70606;
+    padding: 0.4em 0.8em;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+/* Com mensagens de erro o formulário pode crescer */
+.cadastro {
+    height: auto;
+    min-height: 80vh;
+}
+
+.login {
+    height: auto;
+    min-height: 25em;
 }
