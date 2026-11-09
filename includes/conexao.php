@@ -1,6 +1,4 @@
 <?php
-// Configuração da conexão com o MariaDB (valores padrão do XAMPP).
-// Ajuste usuário/senha conforme o seu ambiente.
 const DB_HOST = 'localhost';
 const DB_NAME = 'teams_db';
 const DB_USER = 'root';
